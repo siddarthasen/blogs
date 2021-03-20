@@ -1,0 +1,24 @@
+<div>
+  <div id="form">
+    <mat-form-field appearance="fill">
+      <mat-label>Author</mat-label>
+      <input matInput placeholder="You" id="author">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Title</mat-label>
+      <input matInput placeholder="Your title" id="title">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Contents</mat-label>
+      <input matInput placeholder="Your contents" id="contents">
+    </mat-form-field>
+    
+    <button mat-raised-button color="primary" (click)="onSubmit()">Search</button>
+  </div>
+  <div>
+    <div *ngFor="let blog of blogs">
+      <br>
+      <app-result [blog]="blog"></app-result>
+    </div>
+  </div>
+</div>

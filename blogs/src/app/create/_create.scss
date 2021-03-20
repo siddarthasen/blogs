@@ -1,0 +1,16 @@
+@import "../app.component";
+
+#create {
+  @include flexCenter(row);
+
+  #form {
+    @include flexCenter(column);
+    margin-top: 10%;
+  }
+
+  
+}
+
+button {
+  margin: 0px 0px 100px 50px;
+}

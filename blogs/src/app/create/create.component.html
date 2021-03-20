@@ -1,0 +1,20 @@
+<div id="create">
+  <div id="form">
+    <mat-form-field appearance="fill">
+      <mat-label>Enter your name</mat-label>
+      <input matInput placeholder="You" id="author">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Enter the title</mat-label>
+      <input matInput placeholder="Your blog" id="title">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Enter your contents</mat-label>
+      <!-- make bigger -->
+      <textarea matInput id="content"></textarea>
+    </mat-form-field>
+  </div>
+  <div>
+    <button mat-raised-button color="primary" (click)="createNewBlog()">Create</button>
+  </div>
+</div>
