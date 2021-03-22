@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb+srv://supahsid157:supahsid157@cluster0.dxogt.mongodb.net/TaskManager?retryWrites=true&w=majority', {
+mongoose.connect('lol', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => {
